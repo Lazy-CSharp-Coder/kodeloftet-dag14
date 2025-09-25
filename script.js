@@ -76,13 +76,24 @@ function addContent()
 
   const heading = document.querySelector("#heading");
   console.log(heading);
-
-  // Modifisere
-  heading.textContent = "Velkommen til siden";
-
   const paragraph = document.querySelector("#paragraph");
   console.log(paragraph);
+  const textContainer = document.querySelector("#textContainer");
+  console.log(textContainer);
+ 
+  
+  // Modifisere
+  heading.textContent = "Velkommen til siden";
   paragraph.textContent = "Dette er en paragraf som til slutt skal inneholde mye tekst.";
+
+  const newParagraph = document.createElement("p");
+  newParagraph.text = "Jeg er en paragraf laget i JavaScript";
+
+  textContainer.appendChild(newParagraph);   // append er nederst
+  textContainer.prepend(newParagraph);       // prepend er øvesrt
+
+  // Send
+
 
 }
 
