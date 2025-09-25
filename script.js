@@ -87,11 +87,11 @@ function addContent()
   paragraph.textContent = "Dette er en paragraf som til slutt skal inneholde mye tekst.";
 
   const newParagraph = document.createElement("p");
-  newParagraph.text = "Jeg er en paragraf laget i JavaScript";
+  newParagraph.textContent = "Jeg er en paragraf laget i JavaScript";
   console.log(newParagraph);
 
   textContainer.appendChild(newParagraph);   // append er nederst
-  textContainer.prepend(newParagraph);       // prepend er øvesrt
+  // textContainer.prepend(newParagraph);       // prepend er øvesrt
 
   // Send
 
