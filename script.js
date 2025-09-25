@@ -16,6 +16,8 @@ console.log('Username is ' + userName + ', age is : ' + userAge + '.');
 
 const hamburgerImg = document.querySelector('#hamburgerImg');
 
+// alternativ 1
+
 function hamburgerToggle() {
   console.log('Hi from hamburgerToggle');
 
@@ -31,4 +33,27 @@ function hamburgerToggle() {
   navListElement.classList.remove("hidden");*/
 }
 
+// tre måter å gjøre dette på 
+
 hamburgerImg.addEventListener('click', hamburgerToggle);
+
+hamburgerImg.addEventListener("click", function () {
+  console.log('Hi from hamburgerToggle');
+  const navListElement = document.querySelector('.navList'); // Bevist brukt klasse for kun et element med det klassenavnet
+  console.log(navListElement);
+  // Metode 1: Skrive CSS i JS som blir inline-CSS
+  navListElement.style.display = 'flex';
+  navListElement.style.flexDirection = 'column';
+});
+
+hamburgerImg.addEventListener("click", () => {
+  console.log('Hi from hamburgerToggle');
+  const navListElement = document.querySelector('.navList'); // Bevist brukt klasse for kun et element med det klassenavnet
+  console.log(navListElement);
+  // Metode 1: Skrive CSS i JS som blir inline-CSS
+  navListElement.style.display = 'flex';
+  navListElement.style.flexDirection = 'column';
+});
+
+
+
