@@ -80,7 +80,8 @@ function addContent()
   console.log(paragraph);
   const textContainer = document.querySelector("#textContainer");
   console.log(textContainer);
- 
+  const image = document.querySelector("#image");
+  console.log(image);
   
   // Modifisere
   heading.textContent = "Velkommen til siden";
@@ -92,6 +93,11 @@ function addContent()
 
   textContainer.appendChild(newParagraph);   // append er nederst
   // textContainer.prepend(newParagraph);       // prepend er øvesrt
+
+  image.src="code.png";
+  image.alt="fant ikke bilde";
+
+
 
   // Send
 
