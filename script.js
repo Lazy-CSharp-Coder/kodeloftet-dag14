@@ -93,7 +93,7 @@ function addContent()
   newParagraph.textContent = "Jeg er en paragraf laget i JavaScript";
   console.log(newParagraph);
 
-  newParagraph.className("blueText");
+  newParagraph.className = "blueText";
 
   textContainer.appendChild(newParagraph);   // append er nederst
   // textContainer.prepend(newParagraph);       // prepend er øvesrt
