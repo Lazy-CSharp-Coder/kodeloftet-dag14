@@ -88,6 +88,7 @@ function addContent()
 
   const newParagraph = document.createElement("p");
   newParagraph.text = "Jeg er en paragraf laget i JavaScript";
+  console.log(newParagraph);
 
   textContainer.appendChild(newParagraph);   // append er nederst
   textContainer.prepend(newParagraph);       // prepend er øvesrt
