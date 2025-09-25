@@ -18,7 +18,10 @@ const hamburgerImg = document.querySelector('#hamburgerImg');
 
 // alternativ 1
 
-function hamburgerToggle() {
+// funksjon for hente navList elementet og bytter klassenavn for synlig/usynlig
+
+function hamburgerToggle() 
+{
   console.log('Hi from hamburgerToggle');
 
   const navListElement = document.querySelector('.navList'); // Bevist brukt klasse for kun et element med det klassenavnet
@@ -37,6 +40,7 @@ function hamburgerToggle() {
 
 hamburgerImg.addEventListener('click', hamburgerToggle);
 
+/*
 hamburgerImg.addEventListener("click", function () {
   console.log('Hi from hamburgerToggle');
   const navListElement = document.querySelector('.navList'); // Bevist brukt klasse for kun et element med det klassenavnet
@@ -55,5 +59,5 @@ hamburgerImg.addEventListener("click", () => {
   navListElement.style.flexDirection = 'column';
 });
 
-
+*/
 
