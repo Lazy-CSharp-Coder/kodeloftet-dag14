@@ -61,3 +61,27 @@ hamburgerImg.addEventListener("click", () => {
 
 */
 
+//
+// ''''''''''''''''''''''''''''''
+//
+
+
+// Hente element
+
+// Sette opp en funksjon
+
+function addContent() 
+{
+  console.log("hi from add content");
+
+  const heading = document.querySelector("#heading");
+  console.log(heading);
+}
+
+addContent();
+
+// Aktivere funksjonen med en hendelse
+
+
+
+
