@@ -68,6 +68,8 @@ hamburgerImg.addEventListener("click", () => {
 
 // Hente element
 
+const addChange = document.querySelector("#addChange");
+
 // Sette opp en funksjon
 
 function addContent() 
@@ -91,23 +93,22 @@ function addContent()
   newParagraph.textContent = "Jeg er en paragraf laget i JavaScript";
   console.log(newParagraph);
 
+  newParagraph.className("blueText");
+
   textContainer.appendChild(newParagraph);   // append er nederst
   // textContainer.prepend(newParagraph);       // prepend er øvesrt
 
   image.src="code.png";
   image.alt="fant ikke bilde";
 
-
-
   // Send
-
-
 }
 
-addContent();
+// addContent();
 
 // Aktivere funksjonen med en hendelse
 
+addChange.addEventListener("click", addContent);
 
 
 
