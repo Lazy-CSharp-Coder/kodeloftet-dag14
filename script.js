@@ -76,6 +76,14 @@ function addContent()
 
   const heading = document.querySelector("#heading");
   console.log(heading);
+
+  // Modifisere
+  heading.textContent = "Velkommen til siden";
+
+  const paragraph = document.querySelector("#paragraph");
+  console.log(paragraph);
+  paragraph.textContent = "Dette er en paragraf som til slutt skal inneholde mye tekst.";
+
 }
 
 addContent();
